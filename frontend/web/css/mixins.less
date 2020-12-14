@@ -1,0 +1,31 @@
+@blue:#314867;
+@green: #99c45a;
+@black: #3b3b3b;
+.tr(@s:.5s){
+	-webkit-transition: ease @s;
+	-o-transition: ease @s;
+	transition: ease @s;
+}
+.df(){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.fb(@w){
+	flex-basis: @w;
+	flex: 0 0 @w;
+	width: @w;
+	max-width: @w;
+}
+.bg(){
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sh(){
+	box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.11);
+}
